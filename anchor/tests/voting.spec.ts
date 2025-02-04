@@ -30,5 +30,14 @@ describe("Voting", () => {
         new anchor.BN(1838654294609) // poll_end
       )
       .rpc();
+
+    const [pollAddress] = PublicKey.findProgramAddressSync(
+      new anchor.BN(1).toArrayLike(Buffer, "le", 8),
+      votingAddress
+    );
+
+    const poll = await votingProgram.account.poll.fetch(pollAddress);
+
+    console.log(poll);
   });
 });
