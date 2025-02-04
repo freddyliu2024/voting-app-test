@@ -1,7 +1,7 @@
 {
   "address": "coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF",
   "metadata": {
-    "name": "votingapptest",
+    "name": "voting",
     "version": "0.1.0",
     "spec": "0.1.0",
     "description": "Created with Anchor"
@@ -9,16 +9,7 @@
   "instructions": [
     {
       "name": "close",
-      "discriminator": [
-        98,
-        165,
-        201,
-        177,
-        108,
-        65,
-        206,
-        96
-      ],
+      "discriminator": [98, 165, 201, 177, 108, 65, 206, 96],
       "accounts": [
         {
           "name": "payer",
@@ -26,7 +17,7 @@
           "signer": true
         },
         {
-          "name": "votingapptest",
+          "name": "voting",
           "writable": true
         }
       ],
@@ -34,19 +25,10 @@
     },
     {
       "name": "decrement",
-      "discriminator": [
-        106,
-        227,
-        168,
-        59,
-        248,
-        27,
-        150,
-        101
-      ],
+      "discriminator": [106, 227, 168, 59, 248, 27, 150, 101],
       "accounts": [
         {
-          "name": "votingapptest",
+          "name": "voting",
           "writable": true
         }
       ],
@@ -54,19 +36,10 @@
     },
     {
       "name": "increment",
-      "discriminator": [
-        11,
-        18,
-        104,
-        9,
-        104,
-        174,
-        59,
-        33
-      ],
+      "discriminator": [11, 18, 104, 9, 104, 174, 59, 33],
       "accounts": [
         {
-          "name": "votingapptest",
+          "name": "voting",
           "writable": true
         }
       ],
@@ -74,16 +47,7 @@
     },
     {
       "name": "initialize",
-      "discriminator": [
-        175,
-        175,
-        109,
-        31,
-        13,
-        152,
-        155,
-        237
-      ],
+      "discriminator": [175, 175, 109, 31, 13, 152, 155, 237],
       "accounts": [
         {
           "name": "payer",
@@ -91,7 +55,7 @@
           "signer": true
         },
         {
-          "name": "votingapptest",
+          "name": "voting",
           "writable": true,
           "signer": true
         },
@@ -104,19 +68,10 @@
     },
     {
       "name": "set",
-      "discriminator": [
-        198,
-        51,
-        53,
-        241,
-        116,
-        29,
-        126,
-        194
-      ],
+      "discriminator": [198, 51, 53, 241, 116, 29, 126, 194],
       "accounts": [
         {
-          "name": "votingapptest",
+          "name": "voting",
           "writable": true
         }
       ],
@@ -130,22 +85,13 @@
   ],
   "accounts": [
     {
-      "name": "Votingapptest",
-      "discriminator": [
-        255,
-        176,
-        4,
-        245,
-        188,
-        253,
-        124,
-        25
-      ]
+      "name": "Voting",
+      "discriminator": [255, 176, 4, 245, 188, 253, 124, 25]
     }
   ],
   "types": [
     {
-      "name": "Votingapptest",
+      "name": "Voting",
       "type": {
         "kind": "struct",
         "fields": [
